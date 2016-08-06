@@ -1,0 +1,198 @@
+/*vars*/
+$container-width: 940px;
+$footer-height: 194px;
+
+/*colors*/
+$bg-color: #242424;
+$footer-bg: #222222;
+
+
+
+/*layout*/
+@import "_adjust/fonts.scss";
+@import "../bower/normalize.css/normalize.css";
+@import "_adjust/adjustment.scss";
+@import "_adjust/mixins.scss";
+
+
+//////header
+
+.header{
+
+  background: #000;
+  padding: 26px 0;
+
+  .container{
+    font-size: 0;
+
+    > *{
+      font-size: 16px;
+    }
+  }
+}
+
+.nav{
+  display: inline-block;
+  vertical-align: middle;
+  width: 70%;
+}
+
+.nav__item{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav__link{
+  padding: 0 18px;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.auth{
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+  text-align: right;
+}
+
+.auth__link{
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+
+//////content
+
+.content{
+  background: #242424 url("../images/bg.jpg") center top no-repeat;
+  background-size: 100%;
+  padding-top: 55px;
+  padding-bottom: 30px;
+}
+
+.logo{
+  margin: 0 auto;
+  width: 368px;
+}
+
+.advantages__list{
+  font-size: 0;
+  margin-bottom: 80px;
+
+    > *{
+      font-size: 16px;
+    }
+  }
+
+.advantages__item{
+  display: inline-block;
+  vertical-align: top;
+  width: 33.3%;
+  padding-left: 24px;
+}
+
+.advantages__title{
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages__text{
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+.content-block{
+  @extend %clearfix;
+  background: #fff;
+  padding: 55px 80px 50px;
+  margin-bottom: 35px;
+}
+
+.contect-block__left{
+  display: block;
+  width: 50%;
+  float: left;
+  padding-right: 30px;
+}
+
+.contect-block__right{
+  display: block;
+  width: 50%;
+  float: right;
+  padding-left: 90px;
+}
+
+.content-title{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+
+.news__item{
+  margin-bottom: 28px;
+}
+
+.news__text{
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.btn{
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  width: 140px;
+  padding: 10px;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+.contacts__text, .appointment__text, .appointment__form input[type="text"]{
+  text-transform: uppercase;
+}
+
+.appointment__form input[type="text"]{
+  border: 1px solid #000;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+
+
+//////footer
+
+.footer{
+  background: $footer-bg;
+  color: #fff;
+  text-transform: uppercase;
+
+  .container{
+    font-size: 0;
+
+      > *{
+        font-size: 16px;
+      }
+  }
+}
+
+.footer-contacts, .socials, .copyright{
+  display: inline-block;
+  vertical-align: top;
+  width: 33.3%;
+}
+
+.socials__item{
+  display: inline-block;
+  vertical-align: middle;
+}

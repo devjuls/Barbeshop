@@ -1,0 +1,21 @@
+{
+  "name": "project",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Julia"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*"
+  }
+}
