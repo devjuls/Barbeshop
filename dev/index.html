@@ -45,7 +45,9 @@
           </ul>
         </nav>
         <div class="auth">
-          <a href="#" class="auth__link nav__link">Вход</a>
+          <a href="#" class="auth__link nav__link">
+            <span class="auth__link-text">Вход</span>
+          </a>
         </div>
 
       </div> <!-- /container  -->
@@ -70,7 +72,9 @@
             <li class="advantages__item">
               <div class="advantages__title">Круто</div>
               <div class="advantages__text">
-                <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+                <p>Забудьте, как вы стриглись раньше. <br>
+                Мы сделаем из вас звезду футбола или кино! <br>
+                Во всяком случае внешне.</p>
               </div>
             </li>
             <li class="advantages__item">
@@ -89,12 +93,16 @@
               <h2 class="content-title">Новости</h2>
               <ul class="news__list">
                 <li class="news__item">
-                  <div class="news__text">Нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время</div>
+                  <div class="news__text">
+                    <p>Нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время стрижки</p>
+                  </div>
                   <time class="news__date" datetime="2016-01-11">11 января</time>
                 </li>
                 <li class="news__item">
-                  <div class="news__text">Нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время</div>
-                  <time class="news__date" datetime="2016-01-11">11 января</time>
+                  <div class="news__text">
+                    <p>В нашей команде пополнение, Борис «бритва» Стригунец, обладетель множества титулов и наград пополнил наши стройные ряды</p>
+                  </div>
+                  <time class="news__date" datetime="2016-01-11">18 января</time>
                 </li>
               </ul>
               <a href="#" class="news__button btn">Все новости</a>
@@ -104,7 +112,9 @@
           <div class="contect-block__right">
             <div class="gallery">
               <h2 class="content-title">Фотогалерея</h2>
-              <img src="" alt="" class="gallery__image">
+              <div class="gallery__image">
+                <img src="images/content/gallery-photo.jpg" alt="" class="gallery__pic">
+              </div>
               <button class="gallery__btn-prev btn" type="button">Назад</button>
               <button class="gallery__btn-next btn" type="button">Вперед</button>
             </div> <!-- /gallery  -->
@@ -118,13 +128,14 @@
             <div class="contacts">
               <h2 class="content-title">Контактная информация</h2>
               <div class="contacts__text">
-                <div class="company-name">Барбершоп «Бородинский»</div>
-                <div class="address">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</div>
-                <div class="contacts__open">
+                <p>Барбершоп «Бородинский»</p>
+                <p>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+                <p>телефон: +7 (495) 666-02-66</p>
+              </div>
+              <div class="contacts__open">
                   <p>Время работы:</p>
                   <p>пн — пт: с 10:00 до 22:00</p>
                   <p>сб — вс: с 10:00 до 19:00</p>
-                </div>
               </div>
               <a href="#" class="contacts__btn-way btn">Как проехать</a>
               <a href="#" class="contacts__btn-feedback btn">Обратная связь</a>
@@ -134,12 +145,16 @@
           <div class="contect-block__right">
             <div class="appointment">
               <h2 class="content-title">Записаться</h2>
-              <div class="appointment__text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</div>
+              <div class="appointment__text">
+                <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+              </div>
               <form action="post" class="appointment__form">
-                <input type="text" name="date" class="app-date" placeholder="Дата">
-                <input type="text" name="time" class="app-time" placeholder="Время">
-                <input type="text" name="name" class="app-name" placeholder="Имя">
-                <input type="text" name="phone" class="app-phone" placeholder="Телефон">
+                <div class="appointment__input-list">
+                <input type="text" name="date" placeholder="Дата">
+                <input type="text" name="time" placeholder="Время">
+                <input type="text" name="name" placeholder="Имя">
+                <input type="text" name="phone" placeholder="Телефон">
+                </div>
                 <button type="submit" class="btn-submit btn">Отправить</button>
               </form>
             </div> <!-- /appointment  -->
@@ -158,11 +173,11 @@
   <div class="container">
 
     <div class="footer-contacts">
-      <div class="company-name">Барбершоп «Бородинский»</div>
-      <div class="address">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</div>
+      <p>Барбершоп «Бородинский»</p>
+      <p>Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       <a href="#" class="address__link">Как нас найти</a>
-      <div class="phone">телефон: +7 (495) 666-02-66</div>
-    </div> <!-- /address  -->
+      <p>телефон: +7 (495) 666-02-66</p>
+    </div> <!-- /footer-contacts  -->
 
     <div class="socials">
       <div class="footer-text">Давайте дружить!</div>

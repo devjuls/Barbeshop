@@ -25,7 +25,7 @@ $brown: #663d15;
     font-size: 0;
 
     > *{
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 }
@@ -61,9 +61,29 @@ $brown: #663d15;
   text-align: right;
 }
 
-// .auth__link{
+.auth__link-text{
+  display: inline-block;
+  vertical-align: middle;
+}
 
-// }
+.auth__link{
+
+  &:before{
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 18px;
+    height: 16px;
+    margin-right: 5px;
+    background: url("../images/icons/enter.png") center center no-repeat;
+  }
+
+  &:hover{
+    &:before{
+      background: url("../images/icons/enter_a.png") center center no-repeat;
+    }
+  }
+}
 
 
 //////content
@@ -76,13 +96,13 @@ $brown: #663d15;
 }
 
 .logo{
-  margin: 0 auto;
+  margin: 0 auto 18px;
   width: 368px;
 }
 
 .advantages__list{
   font-size: 0;
-  margin-bottom: 80px;
+  margin-bottom: 65px;
 
     > *{
       font-size: 16px;
@@ -93,7 +113,7 @@ $brown: #663d15;
   display: inline-block;
   vertical-align: top;
   width: 33.3%;
-  padding-left: 24px;
+  padding: 0 15px;
 }
 
 .advantages__title{
@@ -105,9 +125,14 @@ $brown: #663d15;
 }
 
 .advantages__text{
-  color: #fff;
   text-align: center;
-  text-transform: uppercase;
+
+  p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.6;
+    text-transform: uppercase;
+  }
 }
 
 
@@ -115,7 +140,7 @@ $brown: #663d15;
 .content-block{
   @extend %clearfix;
   background: #fff;
-  padding: 55px 80px 50px;
+  padding: 50px 80px;
   margin-bottom: 35px;
 }
 
@@ -136,17 +161,16 @@ $brown: #663d15;
 .content-title{
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 35px;
+  margin-bottom: 24px;
   text-transform: uppercase;
+}
+
+.news__list{
+  margin-bottom: 30px;
 }
 
 .news__item{
-  margin-bottom: 28px;
-}
-
-.news__text{
-  margin-bottom: 10px;
-  text-transform: uppercase;
+  margin-bottom: 24px;
 }
 
 .btn{
@@ -155,7 +179,7 @@ $brown: #663d15;
   color: #fff;
   text-transform: uppercase;
   width: 140px;
-  padding: 10px;
+  padding: 12px;
   text-align: center;
   outline: none;
   border: none;
@@ -167,14 +191,79 @@ $brown: #663d15;
   }
 }
 
-.contacts__text, .appointment__text, .appointment__form input[type="text"]{
-  text-transform: uppercase;
+.gallery__image{
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.gallery__pic{
+  width: 285px;
+}
+
+.gallery__btn-prev{
+  float: left;
+}
+
+.gallery__btn-next{
+  float: right;
+}
+
+.contacts__btn-way{
+  margin-right: 20px;
 }
 
 .appointment__form input[type="text"]{
-  border: 1px solid #000;
-  padding: 5px;
+  text-transform: uppercase;
+}
+
+.news__text{
+  margin-bottom: 4px;
+}
+
+.contacts__text, .contacts__open, .appointment__text{
+  margin-bottom: 26px;
+}
+
+.news__text, .contacts__text, .contacts__open, .appointment__text, .footer-contacts{
+
+  p{
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.7;
+    text-transform: uppercase;
+  }
+}
+
+.appointment__input-list{
+  margin-right: -17px;
+}
+
+.appointment__form input[type="text"]{
+  border: 2px solid #000;
+  width: 140px;
+  padding: 10px 0 10px 15px;
   margin-bottom: 20px;
+  margin-right: 17px;
+  outline: none;
+
+  &:active, &:focus{
+    border: 2px solid $brown;
+  }
+
+  &::-webkit-input-placeholder{
+    color: #000;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder{
+    color: #000;
+    opacity: 1;
+  }
+}
+
+
+.btn-submit{
+  width: 100%;
 }
 
 
@@ -191,7 +280,7 @@ $brown: #663d15;
     font-size: 0;
 
       > *{
-        font-size: 16px;
+        font-size: 14px;
       }
   }
 }
@@ -200,7 +289,7 @@ $brown: #663d15;
 .footer-contacts{
   display: block;
   float: left;
-  width: 45%;
+  width: 40%;
 }
 
 .socials{
@@ -218,22 +307,21 @@ $brown: #663d15;
 }
 
 .footer-text, .copyright__text{
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
-// .company-name, .address{
-//   line-height: 1.4;
-// }
 
 .address__link{
+  display: inline-block;
   color: #fff;
   text-decoration: underline;
+  margin-bottom: 4px;
 }
 
 .socials__item{
   display: inline-block;
   vertical-align: middle;
-  margin-right: 6px;
+  margin-right: 2px;
 
   &:last-child{
     margin-right: 0;
@@ -242,8 +330,8 @@ $brown: #663d15;
 
 .socials__link{
   display: inline-block;
-  width: 45px;
-  height: 45px;
+  width: 44px;
+  height: 44px;
   background-color: #000;
   background-position: center center;
   background-repeat: no-repeat;
