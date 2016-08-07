@@ -6,6 +6,7 @@ $footer-height: 194px;
 $grey: #242424;
 $footer-bg: #222222;
 $brown: #663d15;
+$light-grey: #aba9a7;
 
 
 /*layout*/
@@ -13,96 +14,12 @@ $brown: #663d15;
 @import "../bower/normalize.css/normalize.css";
 @import "_adjust/adjustment.scss";
 @import "_adjust/mixins.scss";
+@import "sections/header.scss";
+@import "sections/prices.scss";
 
 
-//////header
 
-.header{
-
-  background: #000;
-
-  .container{
-    font-size: 0;
-
-    > *{
-      font-size: 14px;
-    }
-  }
-}
-
-.nav{
-  display: inline-block;
-  vertical-align: middle;
-  width: 70%;
-}
-
-.nav__link-text{
-  padding-bottom: 26px;
-}
-
-.nav__item{
-  display: inline-block;
-  vertical-align: middle;
-
-  &.active .nav__link-text{
-    border-bottom: 3px solid #fff;
-  }
-
-  &.active{
-    .nav__link:hover{
-      background-color: #000;
-    }
-  }
-}
-
-.nav__link{
-  display: inline-block;
-  padding: 26px 18px 0;
-  font-size: 16px;
-  color: #fff;
-  text-transform: uppercase;
-  transition: background-color .3s;
-
-  &:hover{
-    background-color: $grey;
-  }
-}
-
-.auth{
-  display: inline-block;
-  vertical-align: middle;
-  width: 30%;
-  text-align: right;
-}
-
-.auth__link-text{
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.auth__link{
-
-  &:before{
-    display: inline-block;
-    vertical-align: middle;
-    content: "";
-    width: 18px;
-    height: 16px;
-    margin-right: 5px;
-    background: url("../images/icons/enter.png") center center no-repeat;
-  }
-
-  &:hover{
-    &:before{
-      background: url("../images/icons/enter_a.png") center center no-repeat;
-    }
-  }
-}
-
-
-//////content
-
-.content{
+.index-content{
   background: $grey url("../images/bg.jpg") center top no-repeat;
   background-size: 100%;
   padding-top: 55px;
@@ -113,6 +30,9 @@ $brown: #663d15;
   margin: 0 auto 18px;
   width: 368px;
 }
+
+
+///advantages
 
 .advantages__list{
   font-size: 0;
@@ -135,7 +55,6 @@ $brown: #663d15;
   font-size: 30px;
   font-weight: bold;
   color: #fff;
-  text-transform: uppercase;
   text-align: center;
   position: relative;
   margin-bottom: 58px;
@@ -161,11 +80,11 @@ $brown: #663d15;
     color: #fff;
     font-size: 14px;
     line-height: 1.6;
-    text-transform: uppercase;
   }
 }
 
 
+///content elements
 
 .content-block{
   @extend %clearfix;
@@ -174,14 +93,14 @@ $brown: #663d15;
   margin-bottom: 35px;
 }
 
-.contect-block__left{
+.content-block__left{
   display: block;
   width: 50%;
   float: left;
   padding-right: 30px;
 }
 
-.contect-block__right{
+.content-block__right{
   display: block;
   width: 50%;
   float: right;
@@ -191,15 +110,6 @@ $brown: #663d15;
 .content-title{
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 24px;
-  text-transform: uppercase;
-}
-
-.news__list{
-  margin-bottom: 30px;
-}
-
-.news__item{
   margin-bottom: 24px;
 }
 
@@ -221,6 +131,26 @@ $brown: #663d15;
   }
 }
 
+///news
+
+.news__list{
+  margin-bottom: 30px;
+}
+
+.news__item{
+  margin-bottom: 24px;
+}
+
+.news__text{
+  margin-bottom: 4px;
+}
+
+.news__date{
+  text-transform: lowercase;
+}
+
+///gallery
+
 .gallery__image{
   text-align: center;
   margin-bottom: 45px;
@@ -238,17 +168,12 @@ $brown: #663d15;
   float: right;
 }
 
+///contacts
+
 .contacts__btn-way{
   margin-right: 20px;
 }
 
-.appointment__form input[type="text"]{
-  text-transform: uppercase;
-}
-
-.news__text{
-  margin-bottom: 4px;
-}
 
 .contacts__text, .contacts__open, .appointment__text{
   margin-bottom: 26px;
@@ -260,8 +185,13 @@ $brown: #663d15;
     margin-top: 0;
     margin-bottom: 0;
     line-height: 1.7;
-    text-transform: uppercase;
   }
+}
+
+///appointment
+
+.appointment__form input[type="text"]{
+  text-transform: uppercase;
 }
 
 .appointment__input-list{
@@ -291,11 +221,9 @@ $brown: #663d15;
   }
 }
 
-
 .btn-submit{
   width: 100%;
 }
-
 
 
 //////footer
@@ -303,7 +231,6 @@ $brown: #663d15;
 .footer{
   background: $footer-bg;
   color: #fff;
-  text-transform: uppercase;
   padding-top: 60px;
 
   .container{
@@ -315,6 +242,7 @@ $brown: #663d15;
   }
 }
 
+///contacts
 
 .footer-contacts{
   display: block;
@@ -322,30 +250,20 @@ $brown: #663d15;
   width: 40%;
 }
 
-.socials{
-  display: block;
-  float: left;
-  width: 20%;
-  text-align: center;
-}
-
-.copyright{
-  display: block;
-  float: right;
-  width: 15%;
-  text-align: center;
-}
-
-.footer-text, .copyright__text{
-  margin-bottom: 18px;
-}
-
-
 .address__link{
   display: inline-block;
   color: #fff;
   text-decoration: underline;
   margin-bottom: 4px;
+}
+
+///socials
+
+.socials{
+  display: block;
+  float: left;
+  width: 20%;
+  text-align: center;
 }
 
 .socials__item{
@@ -369,7 +287,10 @@ $brown: #663d15;
   &:hover{
     background-color: #fff;
   }
+}
 
+.socials__text, .copyright__text{
+  margin-bottom: 18px;
 }
 
 .socials__link_vk{
@@ -394,6 +315,15 @@ $brown: #663d15;
   &:hover{
     background-image: url("../images/icons/ig_a.png");
   }
+}
+
+///copyright
+
+.copyright{
+  display: block;
+  float: right;
+  width: 15%;
+  text-align: center;
 }
 
 .copyright__btn{

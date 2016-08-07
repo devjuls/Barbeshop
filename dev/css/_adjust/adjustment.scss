@@ -8,6 +8,7 @@ body {
 	line-height: 1.42;
 	font-family: 'PTSansNarrow', Arial, sans-serif;
 	font-weight: bold;
+	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
 	margin-bottom: 0;
 }
@@ -17,7 +18,17 @@ body {
 }
 
 .wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
 	min-width: $container-width + 20px;
+}
+
+.wrapper:after {
+	content: "";
+	display: block;
+	height: $footer-height;
+	overflow: hidden;
 }
 
 .main-content{
@@ -48,7 +59,9 @@ footer {
 	background: $footer-bg;
 	min-height: $footer-height;
 	width: 100%;
+	margin-top: -$footer-height;
 	min-width: $container-width + 20px;
+	position: relative;
 }
 
 a{

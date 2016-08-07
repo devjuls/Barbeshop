@@ -1,0 +1,92 @@
+.header{
+
+  background: #000;
+
+  .container{
+    font-size: 0;
+
+    > *{
+      font-size: 14px;
+    }
+  }
+}
+
+.nav{
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+}
+
+.nav__item{
+  display: inline-block;
+  vertical-align: middle;
+
+  &.active .nav__link-text{
+    border-bottom: 4px solid #fff;
+  }
+
+  &.active .nav__link:hover{
+    background-color: #000;
+    cursor: default;
+  }
+}
+
+.nav__link{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 30px 18px 0;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: background-color .3s;
+
+  &:hover{
+    background-color: $grey;
+  }
+}
+
+.nav__link-text{
+  padding-bottom: 26px;
+  border-bottom: 4px solid transparent;
+}
+
+.auth{
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+  text-align: right;
+
+  .nav__link:hover{
+    .auth__link-text:before{
+      background: url("../images/icons/enter_a.png") center center no-repeat;
+    }
+  }
+}
+
+.auth__link-item{
+  display: inline-block;
+  vertical-align: middle;
+
+  &:before{
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 18px;
+    height: 16px;
+    margin-right: 10px;
+    background: url("../images/icons/enter.png") center center no-repeat;
+  }
+}
+
+.auth__link-text{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav__logo{
+  padding-bottom: 26px;
+
+  &:hover{
+    background-color: #000;
+  }
+}
