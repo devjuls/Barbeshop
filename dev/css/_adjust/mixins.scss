@@ -26,6 +26,15 @@
 }
 
 
+@mixin rhombus($width) {
+  display: inline-block;
+  content: "";
+  width: $width;
+  height: $width;
+  transform: rotate(45deg);
+}
+
+
 //responsive
 
 @function rem($px) {

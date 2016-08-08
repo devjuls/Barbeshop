@@ -96,11 +96,7 @@ $light-grey: #aba9a7;
   margin-bottom: 58px;
 
   &:after{
-    display: inline-block;
-    content: "";
-    width: 20px;
-    height: 20px;
-    transform: rotate(45deg);
+    @include rhombus(20px);
     background-color: #fff;
     position: absolute;
     top: 50px;
