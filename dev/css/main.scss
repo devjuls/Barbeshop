@@ -18,6 +18,7 @@ $light-grey: #aba9a7;
 @import "sections/prices.scss";
 
 
+///layout
 
 .index-content{
   background: $grey url("../images/bg.jpg") center top no-repeat;
@@ -25,6 +26,41 @@ $light-grey: #aba9a7;
   padding-top: 55px;
   padding-bottom: 30px;
 }
+
+.content-block{
+  @extend %clearfix;
+  background: #fff;
+  padding: 50px 80px;
+  margin-bottom: 35px;
+}
+
+.content-block__left{
+  display: block;
+  width: 50%;
+  float: left;
+  padding-right: 20px;
+  position: relative;
+
+  &:after{
+    display: block;
+    content: "";
+    width: 8px;
+    height: 278px;
+    background: url("../images/decor/line.png") center center no-repeat;
+    position: absolute;
+    left: 100%;
+    top: 36px;
+  }
+}
+
+.content-block__right{
+  display: block;
+  width: 50%;
+  float: right;
+  padding-left: 90px;
+}
+
+
 
 .logo{
   margin: 0 auto 18px;
@@ -85,27 +121,6 @@ $light-grey: #aba9a7;
 
 
 ///content elements
-
-.content-block{
-  @extend %clearfix;
-  background: #fff;
-  padding: 50px 80px;
-  margin-bottom: 35px;
-}
-
-.content-block__left{
-  display: block;
-  width: 50%;
-  float: left;
-  padding-right: 30px;
-}
-
-.content-block__right{
-  display: block;
-  width: 50%;
-  float: right;
-  padding-left: 90px;
-}
 
 .content-title{
   font-size: 30px;
@@ -190,15 +205,12 @@ $light-grey: #aba9a7;
 
 ///appointment
 
-.appointment__form input[type="text"]{
-  text-transform: uppercase;
-}
-
 .appointment__input-list{
   margin-right: -17px;
 }
 
 .appointment__form input[type="text"]{
+  text-transform: uppercase;
   border: 2px solid #000;
   width: 140px;
   padding: 10px 0 10px 15px;
@@ -262,7 +274,7 @@ $light-grey: #aba9a7;
 .socials{
   display: block;
   float: left;
-  width: 20%;
+  width: 25%;
   text-align: center;
 }
 

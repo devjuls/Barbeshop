@@ -17,27 +17,28 @@
   width: 80%;
 }
 
+.nav__list{
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .nav__item{
   display: inline-block;
   vertical-align: middle;
 
-  &.active .nav__link-text{
-    border-bottom: 4px solid #fff;
+  &.active{
+    padding: 0 18px;
   }
 
-  &.active .nav__link:hover{
-    background-color: #000;
-    cursor: default;
+  &.active .nav__link-text{
+    border-bottom: 4px solid #fff;
   }
 }
 
 .nav__link{
   display: inline-block;
   vertical-align: middle;
-  padding: 30px 18px 0;
-  font-size: 16px;
-  color: #fff;
-  text-transform: uppercase;
+  padding: 0 18px;
   transition: background-color .3s;
 
   &:hover{
@@ -46,7 +47,9 @@
 }
 
 .nav__link-text{
-  padding-bottom: 26px;
+  font-size: 16px;
+  color: #fff;
+  padding: 26px 0 22px;
   border-bottom: 4px solid transparent;
 }
 
@@ -84,9 +87,15 @@
 }
 
 .nav__logo{
-  padding-bottom: 26px;
+  display: inline-block;
+  vertical-align: middle;
+}
 
-  &:hover{
-    background-color: #000;
-  }
+.nav__logo-link{
+  display: block;
+  padding: 0 16px;
+}
+
+.nav__logo-pic{
+  display: block;
 }
