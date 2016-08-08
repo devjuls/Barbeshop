@@ -4,7 +4,7 @@
 
 .content{
   padding-top: 50px;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
 }
 
 .page-title{
@@ -83,15 +83,9 @@
   margin-bottom: 38px;
 }
 
-.prices-block__left{
+.prices-block__left, .prices-block__right{
   display: block;
   float: left;
-  width: 50%;
-}
-
-.prices-block__right{
-  display: block;
-  float: right;
   width: 50%;
 }
 
@@ -140,6 +134,3 @@
   padding-right: 85px;
 }
 
-.content-text{
-  line-height: 1.7;
-}
