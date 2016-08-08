@@ -1,0 +1,105 @@
+.footer{
+  background: $footer-bg;
+  color: #fff;
+  padding-top: 60px;
+
+  .container{
+    font-size: 0;
+
+      > *{
+        font-size: 14px;
+      }
+  }
+}
+
+///contacts
+
+.footer-contacts{
+  display: block;
+  float: left;
+  width: 40%;
+}
+
+.address__link{
+  display: inline-block;
+  color: #fff;
+  text-decoration: underline;
+  margin-bottom: 4px;
+}
+
+///socials
+
+.socials{
+  display: block;
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.socials__item{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.socials__link{
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-color: #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &:hover{
+    background-color: #fff;
+  }
+}
+
+.socials__text, .copyright__text{
+  margin-bottom: 18px;
+}
+
+.socials__link_vk{
+  background-image: url("../images/icons/vk.png");
+
+  &:hover{
+    background-image: url("../images/icons/vk_a.png");
+  }
+}
+
+.socials__link_fb{
+  background-image: url("../images/icons/fb.png");
+
+  &:hover{
+    background-image: url("../images/icons/fb_a.png");
+  }
+}
+
+.socials__link_ig{
+  background-image: url("../images/icons/ig.png");
+
+  &:hover{
+    background-image: url("../images/icons/ig_a.png");
+  }
+}
+
+///copyright
+
+.copyright{
+  display: block;
+  float: right;
+  width: 15%;
+  text-align: center;
+}
+
+.copyright__btn{
+
+  &:hover{
+    background-color: #fff;
+    color: #000;
+  }
+}
