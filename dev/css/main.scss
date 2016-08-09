@@ -7,6 +7,7 @@ $grey: #242424;
 $footer-bg: #222222;
 $brown: #663d15;
 $light-grey: #aba9a7;
+$light-grey1: #e5e5e5;
 
 
 /*layout*/
@@ -18,6 +19,7 @@ $light-grey: #aba9a7;
 @import "sections/index.scss";
 @import "sections/header.scss";
 @import "sections/prices.scss";
+@import "sections/shop.scss";
 @import "sections/footer.scss";
 
 

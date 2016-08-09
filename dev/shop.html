@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="RU-ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Barbershop - магазин</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/main.css">
+<!--   <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16"> -->
+</head>
+<body>
+
+<!--[if lt IE 8]>
+<p class="chromeframe">Похоже, что ты используешь устаревший браузер, друг. Пожалуйста, <a
+        href="http://browsehappy.com/">скачай новый браузер абсолютно бесплатно</a> или <a
+        href="http://www.google.com/chromeframe/?redirect=true">активируй Google Chrome Frame</a></p>
+<![endif]-->
+
+  <div class="wrapper">
+
+    <!-- ///////////////////////////////////////////// -->
+    <!-- //////////////// header ///////////////////// -->
+    <!-- ///////////////////////////////////////////// -->
+
+    <header class="header">
+      <div class="container">
+
+        <nav class="nav">
+
+          <div class="nav__logo">
+            <a href="index.html" class="nav__logo-link">
+              <img src="images/logo_s.png" alt="" class="nav__logo-pic">
+            </a>
+          </div>
+          <ul class="nav__list">
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <div class="nav__link-text">Информация</div>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <div class="nav__link-text">Новости</div>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="prices.html" class="nav__link">
+                <div class="nav__link-text">Прайс-лист</div>
+              </a>
+            </li>
+            <li class="nav__item active">
+              <div class="nav__link-text">Магазин</div>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <div class="nav__link-text">Контакты</div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="auth">
+          <a href="#" class="nav__link">
+            <div class="nav__link-text auth__link-item">
+              <div class="auth__link-text">Вход</div>
+            </div>
+          </a>
+        </div>
+
+      </div> <!-- /container  -->
+
+    </header>
+
+    <!-- ///////////////////////////////////////////// -->
+    <!-- //////////////// content ///////////////////// -->
+    <!-- ///////////////////////////////////////////// -->
+
+    <div class="content">
+      <div class="container">
+
+        <header class="page-header">
+          <h1 class="title">Средства для ухода</h1>
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="prices.html" class="breadcrumbs__link">Магазин</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <div class="breadcrumbs__text">Средства для ухода</div>
+            </li>
+          </ul>
+        </header>
+
+        <div class="shop">
+
+          <aside class="sidebar">
+            <div class="products-choice">
+
+              <form action="post" class="products-choice__form">
+
+                <fieldset class="producers">
+                  <h3 class="subtitle">Производители:</h3>
+                  <label class="producers__item">
+                    <input class="producers__input" type="checkbox">
+                    <div class="producers__input-visible"></div>
+                    <div class="producers__item-name">Baxter of California Baxter of California</div>
+                  </label>
+                  <label class="producers__item">
+                    <input class="producers__input" type="checkbox">
+                    <div class="producers__input-visible"></div>
+                    Mr Natty
+                  </label>
+                  <label class="producers__item">
+                    <input class="producers__input" type="checkbox">
+                    <div class="producers__input-visible"></div>Suavecito
+                  </label>
+                  <label class="producers__item">
+                    <input class="producers__input" type="checkbox">
+                    <div class="producers__input-visible"></div>Malin+Goetz
+                  </label>
+                  <label class="producers__item">
+                    <input class="producers__input" type="checkbox">
+                    <div class="producers__input-visible"></div>
+                    Murray's
+                  </label>
+                  <label class="producers__item">
+                    <input class="producers__input" type="checkbox">
+                    <div class="producers__input-visible"></div>American crew
+                  </label>
+                </fieldset>
+
+                <fieldset class="products-groups">
+                  <h3 class="subtitle">Группы товаров:</h3>
+                  <label class="products-groups__item">
+                    <input type="radio">Baxter of California
+                  </label>
+                  <label class="products-groups__item">
+                    <input type="radio">Mr Natty
+                  </label>
+                  <label class="products-groups__item">
+                    <input type="radio">Suavecito
+                  </label>
+                </fieldset>
+
+                <button class="btn btn_show" type="submit">Показать</button>
+
+              </form>
+
+            </div> <!-- /products-choice  -->
+          </aside>
+
+          <main class="products">
+
+            <ul class="products__list">
+              <li class="products__item"> <!-- item 1  -->
+                <div class="products__wrapper">
+                  <a href="#" class="products__link">
+                    <div class="products__image">
+                      <img src="images/content/products/prod1.jpg" alt="" class="products__pic">
+                    </div>
+                    <div class="products__name">Набор для путешествий</div>
+                    <div class="products__producer">"Baxter of California"</div>
+                  </a>
+
+                  <div class="products__bottom">
+                    <div class="products__price">2 900 руб.</div>
+                    <button class="btn btn_buy">Купить</button>
+                  </div>
+                </div> <!-- /products__wrapper  -->
+              </li>
+              <li class="products__item"> <!-- item 2  -->
+                <div class="products__wrapper">
+                  <a href="#" class="products__link">
+                    <div class="products__image">
+                      <img src="images/content/products/prod2.jpg" alt="" class="products__pic">
+                    </div>
+                    <div class="products__name">Набор для путешествий</div>
+                    <div class="products__producer">"Baxter of California"</div>
+                  </a>
+
+                  <div class="products__bottom">
+                    <div class="products__price">750 руб.</div>
+                    <button class="btn btn_buy">Купить</button>
+                  </div>
+                </div> <!-- /products__wrapper  -->
+              </li>
+              <li class="products__item"> <!-- item 3  -->
+                <div class="products__wrapper">
+                  <a href="#" class="products__link">
+                    <div class="products__image">
+                      <img src="images/content/products/prod3.jpg" alt="" class="products__pic">
+                    </div>
+                    <div class="products__name">Набор для путешествий</div>
+                    <div class="products__producer">"Baxter of California"</div>
+                  </a>
+                  <div class="products__bottom">
+                    <div class="products__price">290 руб.</div>
+                    <button class="btn btn_buy">Купить</button>
+                  </div>
+                </div> <!-- /products__wrapper  -->
+              </li>
+              <li class="products__item"> <!-- item 4  -->
+                <div class="products__wrapper">
+                  <a href="#" class="products__link">
+                    <div class="products__image">
+                      <img src="images/content/products/prod4.jpg" alt="" class="products__pic">
+                    </div>
+                    <div class="products__name">Набор для путешествий</div>
+                    <div class="products__producer">"Baxter of California"</div>
+                  </a>
+
+                  <div class="products__bottom">
+                    <div class="products__price">500 руб.</div>
+                    <button class="btn btn_buy">Купить</button>
+                  </div>
+                </div> <!-- /products__wrapper  -->
+              </li>
+              <li class="products__item"> <!-- item 5  -->
+                <div class="products__wrapper">
+                  <a href="#" class="products__link">
+                    <div class="products__image">
+                      <img src="images/content/products/prod5.jpg" alt="" class="products__pic">
+                    </div>
+                    <div class="products__name">Набор для путешествий</div>
+                    <div class="products__producer">"Baxter of California"</div>
+                  </a>
+
+                  <div class="products__bottom">
+                    <div class="products__price">300 руб.</div>
+                    <button class="btn btn_buy">Купить</button>
+                  </div>
+                </div> <!-- /products__wrapper  -->
+              </li>
+              <li class="products__item"> <!-- item 6  -->
+                <div class="products__wrapper">
+                  <a href="#" class="products__link">
+                    <div class="products__image">
+                      <img src="images/content/products/prod6.jpg" alt="" class="products__pic">
+                    </div>
+                    <div class="products__name">Набор для путешествий</div>
+                    <div class="products__producer">"Baxter of California"</div>
+                  </a>
+                  <div class="products__bottom">
+                    <div class="products__price">3 900 руб.</div>
+                    <button class="btn btn_buy">Купить</button>
+                  </div>
+                </div> <!-- /products__wrapper  -->
+              </li>
+            </ul>
+
+            <div class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">1</a>
+                </li>
+                <li class="pagination__item active">
+                  <div class="pagination__link">2</div>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">3</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">4</a>
+                </li>
+              </ul>
+            </div> <!-- /pagination  -->
+
+          </main>
+
+        </div>
+
+      </div> <!-- /container  -->
+    </div>
+
+  </div> <!-- /wrapper -->
+
+
+<!-- ///////////////////////////////////////////// -->
+<!-- //////////////// footer ///////////////////// -->
+<!-- ///////////////////////////////////////////// -->
+
+  <footer class="footer">
+
+  <div class="container">
+
+    <div class="footer-contacts">
+      <div class="content-text">
+        <p>Барбершоп «Бородинский»</p>
+        <p>Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a href="#" class="address__link">Как нас найти</a>
+        <p>телефон: +7 (495) 666-02-66</p>
+      </div>
+    </div> <!-- /footer-contacts  -->
+
+    <div class="socials">
+      <div class="socials__text">Давайте дружить!</div>
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a href="#" class="socials__link socials__link_vk"></a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link socials__link_fb"></a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link socials__link_ig"></a>
+        </li>
+      </ul>
+    </div> <!-- /socials  -->
+
+    <div class="copyright">
+      <div class="copyright__text">Разработано:</div>
+      <a href="#" class="copyright__btn btn">htmlacademy.ru</a>
+    </div>
+
+  </div> <!-- /container  -->
+
+  </footer>
+
+
+<!-- //////////////// scripts /////////////// -->
+
+<!-- JQuery  -->
+  <!-- <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script> -->
+
+<!-- phone mask  -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script> -->
+
+<!-- yandex map  -->
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
+
+<!-- <script src="js/main.js"></script> -->
+
+</body>
+</html>
