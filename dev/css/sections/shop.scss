@@ -184,7 +184,7 @@
   padding: 0 17px;
 }
 
-.products__bottom{
+.products__order{
   padding: 10px 17px 17px;
   font-size: 0;
 
@@ -227,4 +227,9 @@
   color: #fff;
   text-align: center;
   line-height: 43px;
+  transition: background-color .3s;
+
+  &:hover{
+    background-color: $brown;
+  }
 }
