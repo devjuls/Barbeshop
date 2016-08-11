@@ -3,18 +3,34 @@
   background: #000;
 
   .container{
-    font-size: 0;
-
-    > *{
-      font-size: 14px;
-    }
+    @extend %clearfix;
   }
 }
 
+
+///logo
+
+.header__logo{
+  display: block;
+  float: left;
+  width: 15%;
+}
+
+.header__logo-link{
+  display: block;
+  padding: 26px 20px;
+}
+
+.header__logo-pic{
+  display: block;
+}
+
+///navigation
+
 .nav{
-  display: inline-block;
-  vertical-align: middle;
-  width: 80%;
+  display: block;
+  float: left;
+  width: 65%;
 }
 
 .nav__list{
@@ -53,9 +69,12 @@
   border-bottom: 4px solid transparent;
 }
 
+
+///auth
+
 .auth{
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
+  float: right;
   width: 20%;
   text-align: right;
 
@@ -86,16 +105,3 @@
   vertical-align: middle;
 }
 
-.nav__logo{
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.nav__logo-link{
-  display: block;
-  padding: 0 20px;
-}
-
-.nav__logo-pic{
-  display: block;
-}
