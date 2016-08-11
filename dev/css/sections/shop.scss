@@ -29,6 +29,26 @@
   }
 }
 
+.producers__item{
+  &:hover{
+    cursor: pointer;
+
+    & .producers__item-name{
+      color: $brown;
+    }
+  }
+}
+
+.groups__item{
+  &:hover{
+    cursor: pointer;
+
+    & .groups__item-name{
+      color: $brown;
+    }
+  }
+}
+
 .producers__input, .groups__input{
   display: inline-block;
   position: absolute;
@@ -107,6 +127,7 @@
   vertical-align: top;
   width: 170px;
   padding-left: 22px;
+  transition: color .3s;
 }
 
 .producers__input:checked + .producers__input-visible{
@@ -149,6 +170,8 @@
   width: 33.3%;
   padding-right: 20px;
   margin-bottom: 20px;
+
+
 }
 
 .products__wrapper{
