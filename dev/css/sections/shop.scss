@@ -14,12 +14,12 @@
 .producers, .groups{
   border: none;
   padding: 0;
-  margin: 0 0 40px;
+  margin: 0 0 30px;
 }
 
 .producers__item, .groups__item{
   display: block;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
   position: relative;
 
   font-size: 0;
@@ -38,38 +38,88 @@
 
 .producers__input-visible{
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   content: "";
   width: 20px;
   height: 20px;
-  border: 1px solid #000;
+  border: 2px solid $light-black;
+  position: relative;
+
+  &:before{
+    display: block;
+    content: "";
+    width: 16px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  &:after{
+    display: block;
+    content: "";
+    width: 16px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
 
 .groups__input-visible{
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   content: "";
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 1px solid #000;
+  border: 2px solid $light-black;
+  position: relative;
+
+  &:after{
+    display: block;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
 
 .producers__item-name, .groups__item-name{
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   width: 170px;
-  padding-left: 20px;
+  padding-left: 22px;
 }
 
 .producers__input:checked + .producers__input-visible{
-  background-color: $grey;
+  &:before, &:after{
+    background-color: $light-black;
+  }
 }
 
-
-// .groups__input:checked + .groups__input-visible{
-//   background-color: red;
-// }
+.groups__input:checked + .groups__input-visible{
+  &:after{
+    background-color: $light-black;
+  }
+}
 
 .btn_show{
   width: 110px;
