@@ -1,3 +1,1 @@
-/* all scripts */
-
 //= scripts.js
