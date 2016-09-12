@@ -79,8 +79,8 @@
   text-align: right;
 
   .nav__link:hover{
-    .auth__link-text:before{
-      background: url("../images/icons/enter_a.png") center center no-repeat;
+    .auth__link-item:before{
+      opacity: 1;
     }
   }
 }
@@ -96,7 +96,9 @@
     width: 18px;
     height: 16px;
     margin-right: 10px;
-    background: url("../images/icons/enter.png") center center no-repeat;
+    background: url("../images/icons/enter_a.png") center center no-repeat;
+    opacity: 0.3;
+    transition: opacity .3s;
   }
 }
 

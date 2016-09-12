@@ -164,7 +164,7 @@
               <div class="content-text content-text_block">
                 <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
               </div>
-              <form action="post" class="appointment__form">
+              <form action="post" class="main-form">
                 <div class="appointment__input-list">
                 <input type="text" name="date" placeholder="Дата">
                 <input type="text" name="time" placeholder="Время">
@@ -230,10 +230,30 @@
   <!-- ///////////////////////////////////////////// -->
 
   <div id="modal-login"><!-- Сaмo oкнo -->
-    <span id="modal-login__close">X</span> <!-- Кнoпкa зaкрыть -->
+    <div id="modal-login__close"></div> <!-- Кнoпкa зaкрыть -->
 
-    <div class="title">Личный кабинет</div>
-    <div class="content-text">Введите, пожалуйста, свой логин и пароль</div>
+    <div class="modal-login__form-wrapper">
+      <form action="post" class="main-form">
+        <h2 class="title">Личный кабинет</h2>
+        <div class="content-text login-text">Введите, пожалуйста, свой логин и пароль</div>
+        <label class="login-label">
+          <input type="text" class="login" placeholder="логин">
+        </label>
+        <label class="password-label">
+          <input type="password" class="password" placeholder="пароль">
+        </label>
+        <div class="password-params">
+          <label class="products-filter__item">
+            <input class="products-filter__input" type="checkbox" name="save-password" value="save-password">
+            <div class="products-filter__input-visible products-filter__input-visible_checkbox"></div>
+            <div class="products-filter__item-name">Запомните меня</div>
+          </label>
+          <a href="#" class="content-text">Я забыл пароль!</a>
+        </div>
+        <button class="btn" type="submit">Войти</button>
+      </form>
+    </div>
+
   </div>
   <div id="overlay"></div><!-- Пoдлoжкa -->
 

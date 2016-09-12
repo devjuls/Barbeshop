@@ -47,7 +47,7 @@
 
 .products-filter__input-visible{
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   content: "";
   width: 20px;
   height: 20px;
@@ -109,7 +109,7 @@
 
 .products-filter__item-name{
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   width: 170px;
   padding-left: 22px;
   transition: color .3s;

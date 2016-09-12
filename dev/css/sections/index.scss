@@ -145,7 +145,7 @@
   margin-right: -17px;
 }
 
-.appointment__form input[type="text"]{
+.main-form input[type="text"],.main-form input[type="password"]{
   text-transform: uppercase;
   border: 2px solid #000;
   width: 140px;
@@ -176,41 +176,147 @@
 //////modal window login
 
 #modal-login {
-  width: 300px;
-  height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */
-  border-radius: 5px;
-  border: 3px #000 solid;
-  background: #fff;
-  position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
-  top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
-  left: 50%; /* пoлoвинa экрaнa слевa */
-  margin-top: -150px;
-  margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
-  display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
-  opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
-  z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
-  padding: 20px 10px;
+  width: 500px;
+  height: 400px;
+  background: transparent;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  margin-left: -250px;
+  display: none;
+  z-index: 5;
+
+  .modal-login__form-wrapper {
+    width: 90%;
+    background: #fff;
+    padding: 55px 75px;
+  }
+
+  input[type="text"], input[type="password"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .login-label{
+    display: block;
+    position: relative;
+
+    &:before{
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      margin-top: -8px;
+      right: 10px;
+      width: 15px;
+      height: 15px;
+      background: url("../images/icons/user.png") center center no-repeat;
+      z-index: 10;
+    }
+  }
+
+  .password-label{
+    display: block;
+    position: relative;
+
+    &:before{
+      display: block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      margin-top: -9px;
+      right: 10px;
+      width: 15px;
+      height: 17px;
+      background: url("../images/icons/password.png") center center no-repeat;
+      z-index: 10;
+    }
+  }
+
+  .password-params{
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .products-filter__item{
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+  }
+
+  .products-filter__item-name{
+    padding-left: 10px;
+    padding-right: 74px;
+    width: auto;
+  }
+
+  .login-text{
+    margin-bottom: 15px;
+  }
+
+  a{
+    display: inline-block;
+    vertical-align: middle;
+    color: #000;
+    text-decoration: underline;
+    margin-bottom: 0;
+  }
+
+  .btn {
+    width: 100%;
+  }
 }
 
+///modal window close
+
 #modal-login__close {
-  width: 21px;
-  height: 21px;
+  width: 22px;
+  height: 22px;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 8px;
+  right: 8px;
   cursor: pointer;
-  display: block;
+
+  &:before{
+    display: block;
+    content: "";
+    width: 20px;
+    height: 4px;
+    background-color: #d0d0d0;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    transform: rotate(-45deg);
+  }
+
+    &:after{
+    display: block;
+    content: "";
+    width: 20px;
+    height: 4px;
+    background-color: #d0d0d0;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    transform: rotate(45deg);
+  }
 }
-/* Пoдлoжкa */
+
+///overlay
+
 #overlay {
-  z-index: 3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
-  position: fixed; /* всегдa перекрывaет весь сaйт */
-  background-color: #000; /* чернaя */
-  opacity: 0.7; /* нo немнoгo прoзрaчнa */
+  z-index: 3;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.7;
   width: 100%;
-  height: 100%; /* рaзмерoм вo весь экрaн */
-  top: 0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+  height: 100%;
+  top: 0;
   left: 0;
   cursor: pointer;
   display: none;
 }
+
+
