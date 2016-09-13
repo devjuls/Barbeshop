@@ -269,6 +269,12 @@
   }
 }
 
+//modal window active
+
+#modal-login.active{
+  display: block;
+}
+
 ///modal window close
 
 #modal-login__close {
@@ -319,4 +325,6 @@
   display: none;
 }
 
-
+#overlay.active{
+  display: block;
+}

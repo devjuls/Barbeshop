@@ -1,1 +1,1 @@
-//= scripts.js
+//= scripts_new.js
