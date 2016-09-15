@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
 
   //////gallery
@@ -36,24 +34,24 @@ $(document).ready(function() {
 
   //////modal window login
 
-  (function(){
+  // (function(){
 
-    $('#login').on('click', function(e){
-      e.preventDefault();
+  //   $('#login').on('click', function(e){
+  //     e.preventDefault();
 
-      $('#overlay').fadeIn(300,
-        function(){
-          $('#modal-login')
-            .show(100).animate({top: '120px'});
-      });
-    });
+  //     $('#overlay').fadeIn(300,
+  //       function(){
+  //         $('#modal-login')
+  //           .show(100).animate({top: '120px'});
+  //     });
+  //   });
 
-    $('#modal-login__close, #overlay').click(function(){
-      $('#modal-login').animate({top: '20px'}).hide(100,
-        function() {
-          $('#overlay').fadeOut(200)});
-    });
+  //   $('#modal-login__close, #overlay').click(function(){
+  //     $('#modal-login').animate({top: '20px'}).hide(100,
+  //       function() {
+  //         $('#overlay').fadeOut(200)});
+  //   });
 
-  }());
+  // }());
 
 });
