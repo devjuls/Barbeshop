@@ -2,7 +2,7 @@
 
 var loginLink = document.querySelector('#login');
 var modal = document.querySelector('#modal-login');
-var close = modal.querySelector('#modal-login__close');
+var close = modal.querySelector('.modal-close');
 var overlay = document.querySelector('#overlay');
 var login = modal.querySelector('[name=login]');
 var password = modal.querySelector('[name=password]');

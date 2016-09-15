@@ -153,7 +153,7 @@
                   <p>пн — пт: с 10:00 до 22:00</p>
                   <p>сб — вс: с 10:00 до 19:00</p>
               </div>
-              <a href="#" class="contacts__btn-way btn">Как проехать</a>
+              <a href="#" class="contacts__btn-way btn js-open-map">Как проехать</a>
               <a href="#" class="contacts__btn-feedback btn">Обратная связь</a>
             </section> <!-- /contacts  -->
           </div> <!-- /content-block__left  -->
@@ -230,10 +230,10 @@
   <!-- ///////////////////////////////////////////// -->
 
   <div id="modal-login"><!-- Сaмo oкнo -->
-    <div id="modal-login__close"></div> <!-- Кнoпкa зaкрыть -->
+    <div class="modal-close"></div> <!-- Кнoпкa зaкрыть -->
 
     <div class="modal-login__form-wrapper">
-      <form action="post" class="main-form">
+      <form method="post" class="main-form">
         <h2 class="title">Личный кабинет</h2>
         <div class="content-text login-text">Введите, пожалуйста, свой логин и пароль</div>
         <label class="login-label">
@@ -257,17 +257,25 @@
   </div>
   <div id="overlay"></div><!-- Пoдлoжкa -->
 
+  <!-- ///////////////////////////////////////////// -->
+  <!-- //////////////// modal window map ///////// -->
+  <!-- ///////////////////////////////////////////// -->
+
+  <div class="modal-map">
+    <div class="map-content">
+      <div id="map" class="map"></div>
+    </div>
+    <div class="modal-close"></div> <!-- Кнoпкa зaкрыть -->
+  </div>
+
 
 <!-- //////////////// scripts /////////////// -->
 
 <!-- JQuery  -->
-  <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
-
-<!-- phone mask  -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script> -->
+<!--   <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script> -->
 
 <!-- yandex map  -->
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
 <script src="js/main.js"></script>
 

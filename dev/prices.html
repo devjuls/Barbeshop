@@ -61,7 +61,7 @@
           </ul>
         </nav>
         <div class="auth">
-          <a href="#" class="nav__link">
+          <a href="#" id="login" class="nav__link">
             <div class="nav__link-text auth__link-item">
               <div class="auth__link-text">Вход</div>
             </div>
@@ -210,18 +210,48 @@
   </footer>
 
 
+  <!-- ///////////////////////////////////////////// -->
+  <!-- //////////////// modal window login ///////// -->
+  <!-- ///////////////////////////////////////////// -->
+
+  <div id="modal-login"><!-- Сaмo oкнo -->
+    <div class="modal-close"></div> <!-- Кнoпкa зaкрыть -->
+
+    <div class="modal-login__form-wrapper">
+      <form method="post" class="main-form">
+        <h2 class="title">Личный кабинет</h2>
+        <div class="content-text login-text">Введите, пожалуйста, свой логин и пароль</div>
+        <label class="login-label">
+          <input type="text" class="login" name="login" placeholder="логин">
+        </label>
+        <label class="password-label">
+          <input type="password" class="password" name="password"placeholder="пароль">
+        </label>
+        <div class="password-params">
+          <label class="products-filter__item">
+            <input class="products-filter__input" type="checkbox" name="save-password" value="save-password">
+            <div class="products-filter__input-visible products-filter__input-visible_checkbox"></div>
+            <div class="products-filter__item-name">Запомните меня</div>
+          </label>
+          <a href="#" class="content-text">Я забыл пароль!</a>
+        </div>
+        <button class="btn" type="submit">Войти</button>
+      </form>
+    </div>
+
+  </div>
+  <div id="overlay"></div><!-- Пoдлoжкa -->
+
+
 <!-- //////////////// scripts /////////////// -->
 
 <!-- JQuery  -->
   <!-- <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script> -->
 
-<!-- phone mask  -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script> -->
-
 <!-- yandex map  -->
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
+<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
 
-<!-- <script src="js/main.js"></script> -->
+<script src="js/scripts_new.js"></script>
 
 </body>
 </html>
