@@ -65,7 +65,7 @@
 .nav__link-text{
   font-size: 16px;
   color: #fff;
-  padding: 26px 0 22px;
+  padding: 25px 0;
   border-bottom: 4px solid transparent;
 }
 
@@ -77,6 +77,10 @@
   float: right;
   width: 20%;
   text-align: right;
+
+  .nav__link-text{
+    padding: 23px 0 27px;
+  }
 
   .nav__link:hover{
     .auth__link-item:before{
@@ -105,5 +109,6 @@
 .auth__link-text{
   display: inline-block;
   vertical-align: middle;
+  line-height: 16px;
 }
 

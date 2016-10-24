@@ -55,7 +55,7 @@
           </ul>
         </nav>
         <div class="auth">
-          <a href="#" id="login" class="nav__link">
+          <a href="#modal-login" id="login" class="nav__link">
             <div class="nav__link-text auth__link-item">
               <div class="auth__link-text">Вход</div>
             </div>
@@ -73,11 +73,12 @@
     <main class="index-content">
       <div class="container">
 
-        <div class="logo">
+        <h1 class="logo">
           <img src="images/logo.png" alt="Barbershop" class="logo-pic">
-        </div>
+        </h1>
 
         <section class="advantages">
+          <h2 class="hidden">Преимущества</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
               <div class="advantages__title">Быстро</div>
@@ -237,16 +238,16 @@
         <h2 class="title">Личный кабинет</h2>
         <div class="content-text login-text">Введите, пожалуйста, свой логин и пароль</div>
         <label class="login-label">
-          <input type="text" class="login" name="login"placeholder="логин">
+          <input type="text" class="login" name="login" placeholder="логин">
         </label>
         <label class="password-label">
-          <input type="password" class="password" name="password"placeholder="пароль">
+          <input type="password" class="password" name="password" placeholder="пароль">
         </label>
         <div class="password-params">
           <label class="products-filter__item">
             <input class="products-filter__input" type="checkbox" name="save-password" value="save-password">
-            <div class="products-filter__input-visible products-filter__input-visible_checkbox"></div>
-            <div class="products-filter__item-name">Запомните меня</div>
+            <span class="products-filter__input-visible products-filter__input-visible_checkbox"></span>
+            <span class="products-filter__item-name">Запомните меня</span>
           </label>
           <a href="#" class="content-text">Я забыл пароль!</a>
         </div>
